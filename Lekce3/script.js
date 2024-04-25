@@ -97,8 +97,8 @@ const apartment = {
   apartment.status = 'taken';
     
   document.body.innerHTML += "<p>Dispozice bytu: " + apartment.disposition + "</p>";
-  document.body.innerHTML += "<p>Nájem: " + apartment.price.rent + " " + apartment.price.currency + "</p>";
-  document.body.innerHTML += "<p>Plocha bytu: " + apartment.area.floorage + " " + apartment.area.units + "</p>";
+  document.body.innerHTML += "<p>Nájem: " + apartment.price.rent + apartment.price.currency + "</p>";
+  document.body.innerHTML += "<p>Plocha bytu: " + apartment.area.floorage + apartment.area.units + "</p>";
   document.body.innerHTML += "<p>Město: " + mesto + "</p>";
   document.body.innerHTML += "<p>Městská část: " + mestskaCast + "</p>";
   document.body.innerHTML += "<p>Status: " + apartment.status + "</p>";

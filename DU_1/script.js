@@ -11,7 +11,7 @@ a pomocí document.body.innerHTML vypíše její ekvivalent ve stupních Celsia.
 
 
 let fahrenheit = Number(prompt('Zadej stupně ve Fahrenheit'));
-const celsius = Math.floor(fahrenheit * (5 / 9) - 32);
+const celsius = Math.round((5 * (fahrenheit - 32)) / 9)
 
 
 document.body.innerHTML = 'Teplota ve stupních Celsius ' + celsius;
